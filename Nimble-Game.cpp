@@ -15,9 +15,18 @@ vector<string> split(const string &);
 
 string nimbleGame(vector<int> s)
 {
-  return "First"; 
+    int check = 0;
+
+    for (int i = 0; i < s.size(); ++i)
+    {
+        if (s[i] % 2)
+        {
+           check ^= i;
+        }
+    }
+
+    return check ? "First" : "Second";
 }
-    
 
 int main()
 {
