@@ -13,7 +13,7 @@ vector<string> split(const string &);
  * The function accepts INTEGER_ARRAY s as parameter.
  */
 
-string nimbleGame(vector<int> s)
+string nimbleGame2(vector<int> s)
 {
     int check = 0;
 
