@@ -13,6 +13,21 @@ vector<string> split(const string &);
  * The function accepts INTEGER_ARRAY s as parameter.
  */
 
+string nimbleGame(vector<int> s)
+{
+    int check = 0;
+
+    for (int i = 1; i < s.size(); ++i) 
+    {
+        if (s[i] & 1) 
+        {
+            check ^= i;
+        }
+    }
+
+    return check ? "First" : "Second";
+}
+
 string nimbleGame2(vector<int> s)
 {
     int check = 0;
